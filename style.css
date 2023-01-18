@@ -199,7 +199,7 @@ ul {
 
 @media(min-width:1440px){
     body{
-        padding: 0 10rem 0 10rem;
+        padding: 0 8rem 0 8rem;
     }
 
 
@@ -217,18 +217,21 @@ ul {
     }
 
     .flexbox-1 .left-side{
-        flex: 55%;
+        flex: 45%;
     }
 
     .flexbox-1 .right-side{
-        flex: 45%;
+        flex: 55%;
+        min-width: 65vh;
        
     }
 
     .flexbox-2{
-        min-height: 30vh;
+        min-height: 40vh;
         justify-content: space-between;
     }
+
+    
 
     .star-box{
         column-gap: 1.5rem;
@@ -241,6 +244,8 @@ ul {
     .star-box{
         padding: 1rem 3rem 1rem 3rem;
     }
+
+    
 }
 
 @media(min-width:1536px){
