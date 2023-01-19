@@ -18,6 +18,7 @@
 
 body {
   padding: 1rem;
+  position: relative;
 }
 
 ul {
@@ -27,11 +28,32 @@ ul {
   column-gap: 0.5rem;
 }
 
+.top-img-mobile{
+  position: absolute;
+  top: 0;
+}
+
+.bottom-img-mobile{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.top-img-desktop{
+  display: none;
+}
+
+.bottom-img-desktop{
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .flexbox-1 {
@@ -96,6 +118,12 @@ ul {
   width: 100%;
 }
 
+.card:last-child{
+  margin-bottom: 5rem;
+}
+
+
+
 .buyer {
   display: flex;
   align-items: center;
@@ -132,6 +160,25 @@ ul {
     gap: 2rem;
     padding: 0 2rem;
     justify-content: center;
+  }
+
+  .top-img-mobile{
+    display: none;
+  }
+
+  .bottom-img-mobile{
+    display: none;
+  }
+
+  .top-img-desktop{
+    display: block;
+    position: absolute;
+  }
+
+  .bottom-img-desktop{
+    display: block;
+    position: absolute;
+    bottom: 0;
   }
 
  .header{
@@ -198,6 +245,7 @@ ul {
 
   .card:last-child{
     align-self: flex-end;
+    margin-bottom: 0;
   }
 
 }
@@ -218,6 +266,10 @@ ul {
   .flexbox-1 .right-side{
     flex: 45%;
     justify-content: center;
+  }
+
+  .flexbox-2{
+    min-height: 30vh;
   }
 
 }
